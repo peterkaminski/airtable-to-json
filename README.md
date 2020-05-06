@@ -12,6 +12,13 @@ To run `airtable-to-json.py`, you specify your Airtable API key, the base ID (fo
 
 Clone the git repo.
 
+```shell
+git clone https://github.com/peterkaminski/airtable-to-json.git
+cd airtable-to-json
+```
+
+
+
 (Optional) Set up a Python virtual environment.
 
 ```shell
