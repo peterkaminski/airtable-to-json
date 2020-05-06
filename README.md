@@ -8,7 +8,11 @@ This is a utility which connects to an Airtable base and exports one table to a 
 
 To run `pk-airtable-dump.py`, you specify your Airtable API key, the base ID (found by going to "Help -> API Documentation" when in your base), the table name, and an optional formula which causes the tool to only export records for which the formula evaluates as TRUE (basically, a filter).
 
-### Installation
+## Feedback
+
+Please submit feedback to [PK Airtable Dump Issues](https://github.com/peterkaminski/pk-airtable-dump/issues).  Thank you!
+
+## Installation
 
 Clone the git repo.
 
