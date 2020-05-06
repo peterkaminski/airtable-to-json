@@ -21,8 +21,6 @@ git clone https://github.com/peterkaminski/pk-airtable-dump.git
 cd pk-airtable-dump
 ```
 
-
-
 (Optional) Set up a Python virtual environment.
 
 ```shell
