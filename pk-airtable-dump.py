@@ -1,10 +1,10 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 ################################################################
 #
-# airtable-to-json
+# pk-airtable-dump
 #
-# Export an Airtable table to a JSON file.
+# Export an Airtable table to a local file.
 #
 # Copyright 2020 Peter Kaminski. See LICENSE.TXT.
 #
@@ -27,7 +27,7 @@ class FatalError(Exception):
 
 # Set up argparse
 def init_argparse():
-    parser = argparse.ArgumentParser(description='Export an Airtable table to a JSON file.')
+    parser = argparse.ArgumentParser(description='Export an Airtable table to a local file.')
     parser.add_argument('--base', required=True, help='base ID (looks like "appXXXXXXXXXXXXXX")')
     parser.add_argument('--table', required=True, help='table name')
     parser.add_argument('--formula', help='formula to filter with')

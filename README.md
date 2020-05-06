@@ -1,20 +1,20 @@
-# Airtable to JSON
+# PK Airtable Dump
 
 ## Overview
 
-Export an Airtable table to a JSON file.
+Export an Airtable table to a local file.
 
-This is a utility which connects to an Airtable base and exports one table to a local JSON file.
+This is a utility which connects to an Airtable base and exports one table to a local file, currently in JSON format.
 
-To run `airtable-to-json.py`, you specify your Airtable API key, the base ID (found by going to "Help -> API Documentation" when in your base), the table name, and an optional formula which causes the tool to only export records for which the formula evaluates as TRUE (basically, a filter).
+To run `pk-airtable-dump.py`, you specify your Airtable API key, the base ID (found by going to "Help -> API Documentation" when in your base), the table name, and an optional formula which causes the tool to only export records for which the formula evaluates as TRUE (basically, a filter).
 
 ### Installation
 
 Clone the git repo.
 
 ```shell
-git clone https://github.com/peterkaminski/airtable-to-json.git
-cd airtable-to-json
+git clone https://github.com/peterkaminski/pk-airtable-dump.git
+cd pk-airtable-dump
 ```
 
 
@@ -44,10 +44,10 @@ You only need to do this once per shell session.
 
 Alternatively, you can specify the API key with the `--apikey` flag each time.
 
-### Run airtable-to-json.py
+### Run pk-airtable-dump.py
 
 ```shell
-./airtable-to-json.py --base appXXXXXXXXXXXXXX --table Movies
+./pk-airtable-dump.py --base appXXXXXXXXXXXXXX --table Movies
 ```
 
 The output file will be named after the base, the table, and the current time:
@@ -58,10 +58,10 @@ Wrote 'appXXXXXXXXXXXXXX-Movies_2020-05-06T15_57_10.231881Z.json'
 
 If you prefer a different output filename, specify it with the `--output` flag.
 
-### Run airtable-to-json.py with a Formula
+### Run pk-airtable-dump.py with a Formula
 
 ```shell
-./airtable-to-json.py --base appXXXXXXXXXXXXXX --table Movies --formula '({Year} = 1948) = 1'
+./pk-airtable-dump.py --base appXXXXXXXXXXXXXX --table Movies --formula '({Year} = 1948) = 1'
 ```
 
 Note that the formula needs to be a boolean, so you may need to wrap your formula with "(formula) = 1" or "(formula) = 0".
