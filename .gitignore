@@ -1,0 +1,12 @@
+# outputfiles
+*.json
+
+# secrets
+env.sh
+
+# python
+venv
+
+# Emacs
+*~
+\#*\#
